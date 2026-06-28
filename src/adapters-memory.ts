@@ -11,7 +11,7 @@
  *
  * NOT recommended for production — data is lost on process exit.
  *
- * @module @intelagent/knowledge-grid/adapters-memory
+ * @module @opafex/knowledge-grid/adapters-memory
  */
 
 import type { StorageAdapter, GridEntryRow, VectorAdapter, VectorMatch, VectorSearchResult } from './adapters';
@@ -29,7 +29,7 @@ function generateId(): string {
  * In-memory storage adapter. Stores grid entries in a Map.
  *
  * ```ts
- * import { InMemoryStorageAdapter } from '@intelagent/knowledge-grid';
+ * import { InMemoryStorageAdapter } from '@opafex/knowledge-grid';
  * const storage = new InMemoryStorageAdapter();
  * ```
  */
@@ -196,7 +196,7 @@ function hashEmbedding(text: string, dimensions = 64): number[] {
  * Pass a custom `embedFn` for real embeddings (OpenAI, Cohere, etc.).
  *
  * ```ts
- * import { InMemoryVectorAdapter } from '@intelagent/knowledge-grid';
+ * import { InMemoryVectorAdapter } from '@opafex/knowledge-grid';
  *
  * // With built-in hash embeddings (testing only)
  * const vector = new InMemoryVectorAdapter();

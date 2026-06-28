@@ -5,7 +5,7 @@
  * The open-source package does NOT depend on Prisma or any specific
  * database — users provide their own implementations.
  *
- * @module @intelagent/knowledge-grid/adapters
+ * @module @opafex/knowledge-grid/adapters
  */
 
 import type { GridEntry, GridLayer, GridDomain, GridSourceType, GridMaturity } from './types';
@@ -145,7 +145,7 @@ export function initKnowledgeGrid(config: KnowledgeGridConfig): void {
 export function getGridConfig(): KnowledgeGridConfig {
   if (!_config) {
     throw new Error(
-      '[@intelagent/knowledge-grid] Not initialized. Call initKnowledgeGrid({ storage, vector }) first.',
+      '[@opafex/knowledge-grid] Not initialized. Call initKnowledgeGrid({ storage, vector }) first.',
     );
   }
   return _config;

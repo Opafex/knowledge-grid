@@ -4,7 +4,7 @@
  * Intent-driven retrieval with static layer weights.
  * No pathway boosts, no maturation-adaptive weights — those are Intelligence-tier.
  *
- * @module @intelagent/knowledge-grid/grid-retriever
+ * @module @opafex/knowledge-grid/grid-retriever
  */
 
 import { getGridConfig } from './adapters';

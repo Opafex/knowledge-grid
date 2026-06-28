@@ -1,5 +1,5 @@
 /**
- * @intelagent/knowledge-grid
+ * @opafex/knowledge-grid
  *
  * Open-source knowledge grid for AI agents.
  * Provides vector indexing, domain inference, intent-driven retrieval,
@@ -8,7 +8,7 @@
  * ## Quick Start
  *
  * ```ts
- * import { initKnowledgeGrid, indexTask, searchGrid } from '@intelagent/knowledge-grid';
+ * import { initKnowledgeGrid, indexTask, searchGrid } from '@opafex/knowledge-grid';
  *
  * // Initialize with your storage and vector adapters
  * initKnowledgeGrid({ storage: myStorageAdapter, vector: myVectorAdapter });
@@ -20,7 +20,7 @@
  * const results = await searchGrid({ agentId: 'agent-1', query: 'quarterly review' });
  * ```
  *
- * @module @intelagent/knowledge-grid
+ * @module @opafex/knowledge-grid
  */
 
 // Adapters (initialize before use)

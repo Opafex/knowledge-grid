@@ -7,7 +7,7 @@
  * Uses template-based usage guides (no LLM calls).
  * LLM-powered research is an Intelligence-tier feature.
  *
- * @module @intelagent/knowledge-grid/connection-auto-ingest
+ * @module @opafex/knowledge-grid/connection-auto-ingest
  */
 
 import { indexGridEntry, removeGridEntry } from './indexing-pipeline';

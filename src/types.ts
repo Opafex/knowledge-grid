@@ -4,7 +4,7 @@
  * Type definitions for the knowledge grid system: Domains x Layers with
  * unified vector indexing, intent-driven retrieval, and maturation tracking.
  *
- * @module @intelagent/knowledge-grid/types
+ * @module @opafex/knowledge-grid/types
  */
 
 // ============================================================================

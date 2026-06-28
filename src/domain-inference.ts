@@ -4,7 +4,7 @@
  * Keyword-based heuristic to classify text content into grid domains.
  * No LLM call — fast, deterministic, and cheap. Falls back to 'general'.
  *
- * @module @intelagent/knowledge-grid/domain-inference
+ * @module @opafex/knowledge-grid/domain-inference
  */
 
 import type { GridDomain } from './types';

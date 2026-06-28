@@ -4,7 +4,7 @@
  * Constructs grid-aware prompt sections from search results.
  * Organizes results into domain sections for injection into the system prompt.
  *
- * @module @intelagent/knowledge-grid/grid-prompt-builder
+ * @module @opafex/knowledge-grid/grid-prompt-builder
  */
 
 import type {

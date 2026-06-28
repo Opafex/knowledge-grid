@@ -1,4 +1,4 @@
-# Contributing to @intelagent/knowledge-grid
+# Contributing to @opafex/knowledge-grid
 
 Thanks for your interest in contributing. This guide covers everything you need to get started.
 

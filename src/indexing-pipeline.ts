@@ -10,7 +10,7 @@
  * 3. Upserts a grid entry via the StorageAdapter
  * 4. Generates & stores vector embedding via the VectorAdapter
  *
- * @module @intelagent/knowledge-grid/indexing-pipeline
+ * @module @opafex/knowledge-grid/indexing-pipeline
  */
 
 import { getGridConfig } from './adapters';

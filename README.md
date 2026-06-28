@@ -1,9 +1,9 @@
-# @intelagent/knowledge-grid
+# @opafex/knowledge-grid
 
 Better context for AI agents. A layered knowledge grid that gives your agent structured, relevant context — so it performs better on every interaction. Zero dependencies.
 
 ```
-npm install @intelagent/knowledge-grid
+npm install @opafex/knowledge-grid
 ```
 
 ## Why this exists
@@ -36,7 +36,7 @@ import {
   searchGrid,
   composeGridContext,
   renderGridContext,
-} from '@intelagent/knowledge-grid';
+} from '@opafex/knowledge-grid';
 
 // 1. Initialise with adapters (in-memory for dev, bring your own for production)
 initKnowledgeGrid({
@@ -159,7 +159,7 @@ interface VectorAdapter {
 For development, testing, and prototyping:
 
 ```ts
-import { InMemoryStorageAdapter, InMemoryVectorAdapter } from '@intelagent/knowledge-grid';
+import { InMemoryStorageAdapter, InMemoryVectorAdapter } from '@opafex/knowledge-grid';
 
 // Uses a deterministic hash-based embedding (not semantic — for testing only)
 const storage = new InMemoryStorageAdapter();
@@ -181,7 +181,7 @@ const vector = new InMemoryVectorAdapter({
 ### Production adapter example (PostgreSQL + pgvector)
 
 ```ts
-import { StorageAdapter, VectorAdapter } from '@intelagent/knowledge-grid';
+import { StorageAdapter, VectorAdapter } from '@opafex/knowledge-grid';
 import { PrismaClient } from '@prisma/client';
 
 class PrismaStorageAdapter implements StorageAdapter {
@@ -201,7 +201,7 @@ class PrismaStorageAdapter implements StorageAdapter {
 New agents start with 10 curated best practices covering error recovery, API auth, approval thresholds, context prioritisation, and more:
 
 ```ts
-import { seedSystemLayerForAgent } from '@intelagent/knowledge-grid';
+import { seedSystemLayerForAgent } from '@opafex/knowledge-grid';
 
 const seeded = await seedSystemLayerForAgent('agent-1');
 // seeded = 10 (first run), 0 (idempotent on repeat)
@@ -212,7 +212,7 @@ const seeded = await seedSystemLayerForAgent('agent-1');
 When you connect an MCP server or SDK, the grid automatically indexes each tool/method:
 
 ```ts
-import { autoIngestMCPServer, autoIngestSDK } from '@intelagent/knowledge-grid';
+import { autoIngestMCPServer, autoIngestSDK } from '@opafex/knowledge-grid';
 
 await autoIngestMCPServer('agent-1', {
   id: 'server-1',

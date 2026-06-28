@@ -1,5 +1,5 @@
 {
-  "name": "@intelagent/knowledge-grid",
+  "name": "@opafex/knowledge-grid",
   "version": "0.1.1",
   "description": "Structured context for AI agents — a layered knowledge grid with vector indexing, domain inference, intent-driven retrieval, and token-budgeted prompt composition. Better context, better agent performance. Zero dependencies.",
   "license": "MIT",

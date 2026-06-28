@@ -5,7 +5,7 @@
  * These represent collective intelligence — operational insights that are
  * true regardless of industry or specific agent configuration.
  *
- * @module @intelagent/knowledge-grid/system-layer-seed
+ * @module @opafex/knowledge-grid/system-layer-seed
  */
 
 import { indexSystemBestPractice } from './indexing-pipeline';
