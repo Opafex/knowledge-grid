@@ -5,7 +5,7 @@ Thanks for your interest in contributing. This guide covers everything you need 
 ## Development setup
 
 ```bash
-git clone https://github.com/intelagent/knowledge-grid.git
+git clone https://github.com/opafex/knowledge-grid.git
 cd knowledge-grid
 npm install
 npm run typecheck   # Verify TypeScript compiles
