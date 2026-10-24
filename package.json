@@ -5,7 +5,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/opafex/knowledge-grid"
+    "url": "git+https://github.com/opafex/knowledge-grid.git"
   },
   "keywords": [
     "knowledge-grid",
