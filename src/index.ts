@@ -27,7 +27,7 @@
 export {
   initKnowledgeGrid,
   getGridConfig,
-} from './adapters';
+} from './adapters.js';
 export type {
   StorageAdapter,
   VectorAdapter,
@@ -35,13 +35,13 @@ export type {
   GridEntryRow,
   VectorMatch,
   VectorSearchResult,
-} from './adapters';
+} from './adapters.js';
 
 // In-memory reference adapters (testing & prototyping)
 export {
   InMemoryStorageAdapter,
   InMemoryVectorAdapter,
-} from './adapters-memory';
+} from './adapters-memory.js';
 
 // Types
 export type {
@@ -62,16 +62,16 @@ export type {
   GridContextSection,
   GridPromptContext,
   GridVectorMetadata,
-} from './types';
+} from './types.js';
 
 export {
   DEFAULT_GRID_DOMAINS,
   getGridCollectionName,
   LAYER_WEIGHTS,
-} from './types';
+} from './types.js';
 
 // Domain inference
-export { inferDomains, inferPrimaryDomain } from './domain-inference';
+export { inferDomains, inferPrimaryDomain } from './domain-inference.js';
 
 // Indexing pipeline
 export {
@@ -88,23 +88,23 @@ export {
   indexLearnedPattern,
   indexMemory,
   indexSystemBestPractice,
-} from './indexing-pipeline';
+} from './indexing-pipeline.js';
 
 // Grid retriever
 export {
   classifyQueryIntent,
   searchGrid,
   quickGridSearch,
-} from './grid-retriever';
+} from './grid-retriever.js';
 
 // Grid prompt builder
 export {
   composeGridContext,
   renderGridContext,
-} from './grid-prompt-builder';
+} from './grid-prompt-builder.js';
 
 // System layer seed
-export { seedSystemLayerForAgent } from './system-layer-seed';
+export { seedSystemLayerForAgent } from './system-layer-seed.js';
 
 // Connection auto-ingest (template-based, no LLM)
 export {
@@ -113,5 +113,5 @@ export {
   autoIngestSDK,
   removeIngestedMCPServer,
   removeIngestedSDK,
-} from './connection-auto-ingest';
-export type { MCPToolInput, SDKMethodInput } from './connection-auto-ingest';
+} from './connection-auto-ingest.js';
+export type { MCPToolInput, SDKMethodInput } from './connection-auto-ingest.js';

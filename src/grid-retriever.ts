@@ -7,9 +7,9 @@
  * @module @opafex/knowledge-grid/grid-retriever
  */
 
-import { getGridConfig } from './adapters';
-import type { GridEntryRow } from './adapters';
-import { inferDomains } from './domain-inference';
+import { getGridConfig } from './adapters.js';
+import type { GridEntryRow } from './adapters.js';
+import { inferDomains } from './domain-inference.js';
 import type {
   GridDomain,
   GridLayer,
@@ -19,8 +19,8 @@ import type {
   GridVectorMetadata,
   QueryIntent,
   GridEntry,
-} from './types';
-import { getGridCollectionName, LAYER_WEIGHTS } from './types';
+} from './types.js';
+import { getGridCollectionName, LAYER_WEIGHTS } from './types.js';
 
 // ============================================================================
 // Intent Classification

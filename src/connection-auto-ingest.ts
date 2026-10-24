@@ -10,8 +10,8 @@
  * @module @opafex/knowledge-grid/connection-auto-ingest
  */
 
-import { indexGridEntry, removeGridEntry } from './indexing-pipeline';
-import { getGridConfig } from './adapters';
+import { indexGridEntry, removeGridEntry } from './indexing-pipeline.js';
+import { getGridConfig } from './adapters.js';
 
 type ConnectionType = 'mcp_server' | 'a2a_agent' | 'integration' | 'custom_integration' | 'sdk';
 

@@ -1,8 +1,9 @@
 {
   "name": "@opafex/knowledge-grid",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Structured context for AI agents — a layered knowledge grid with vector indexing, domain inference, intent-driven retrieval, and token-budgeted prompt composition. Better context, better agent performance. Zero dependencies.",
   "license": "MIT",
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/opafex/knowledge-grid.git"
@@ -49,8 +50,9 @@
   "scripts": {
     "build": "tsc",
     "typecheck": "tsc --noEmit",
-    "prepublishOnly": "npm run build",
-    "test": "node --import tsx --test src/__tests__/*.test.ts"
+    "prepublishOnly": "npm run build && npm run check:dist",
+    "test": "node --import tsx --test src/__tests__/*.test.ts",
+    "check:dist": "node -e \"import('./dist/index.js').then(m=>{const n=Object.keys(m).length;if(n<10)throw new Error('only '+n+' exports');console.log('dist loads in plain Node: '+n+' exports')})\""
   },
   "dependencies": {},
   "devDependencies": {

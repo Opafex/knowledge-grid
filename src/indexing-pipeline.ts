@@ -13,8 +13,8 @@
  * @module @opafex/knowledge-grid/indexing-pipeline
  */
 
-import { getGridConfig } from './adapters';
-import { inferPrimaryDomain } from './domain-inference';
+import { getGridConfig } from './adapters.js';
+import { inferPrimaryDomain } from './domain-inference.js';
 import type {
   GridDomain,
   GridSourceType,
@@ -22,8 +22,8 @@ import type {
   GridIndexResult,
   GridVectorMetadata,
   GridMaturity,
-} from './types';
-import { getGridCollectionName } from './types';
+} from './types.js';
+import { getGridCollectionName } from './types.js';
 
 const logger = { warn: console.warn, error: console.error, info: console.info };
 

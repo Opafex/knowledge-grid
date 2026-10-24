@@ -7,8 +7,8 @@
  * @module @opafex/knowledge-grid/domain-inference
  */
 
-import type { GridDomain } from './types';
-import { DEFAULT_GRID_DOMAINS } from './types';
+import type { GridDomain } from './types.js';
+import { DEFAULT_GRID_DOMAINS } from './types.js';
 
 // ============================================================================
 // Domain Keyword Maps

@@ -15,7 +15,7 @@ import type {
   GridPromptContext,
   MaturationLevel,
   QueryIntent,
-} from './types';
+} from './types.js';
 
 // ============================================================================
 // Constants

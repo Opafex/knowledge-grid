@@ -8,7 +8,7 @@
  * @module @opafex/knowledge-grid/adapters
  */
 
-import type { GridEntry, GridLayer, GridDomain, GridSourceType, GridMaturity } from './types';
+import type { GridEntry, GridLayer, GridDomain, GridSourceType, GridMaturity } from './types.js';
 
 // ============================================================================
 // Storage Adapter

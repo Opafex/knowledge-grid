@@ -33,7 +33,7 @@ import {
   generateUsageGuide,
   LAYER_WEIGHTS,
   DEFAULT_GRID_DOMAINS,
-} from '../index';
+} from '../index.js';
 
 let storage: InstanceType<typeof InMemoryStorageAdapter>;
 let vector: InstanceType<typeof InMemoryVectorAdapter>;

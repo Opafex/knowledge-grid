@@ -8,9 +8,9 @@
  * @module @opafex/knowledge-grid/system-layer-seed
  */
 
-import { indexSystemBestPractice } from './indexing-pipeline';
-import { getGridConfig } from './adapters';
-import type { GridDomain } from './types';
+import { indexSystemBestPractice } from './indexing-pipeline.js';
+import { getGridConfig } from './adapters.js';
+import type { GridDomain } from './types.js';
 
 interface SystemBestPractice {
   id: string;

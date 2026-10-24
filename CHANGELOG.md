@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.1.2 (2026-10-24)
+
+### Fixed
+
+- **Loads in plain Node.js.** 0.1.1 was emitted with extensionless relative imports, which only a bundler could resolve; `import` from Node failed with `ERR_MODULE_NOT_FOUND`. The package is now `"type": "module"`, built with `NodeNext` resolution, and every publish checks that `dist/` loads in plain Node first.
+- Published under `@opafex/knowledge-grid` (previously `@intelagent/knowledge-grid`).
+
 ## 0.1.0 (2026-03-19)
 
 Initial release.

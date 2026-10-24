@@ -14,7 +14,7 @@
  * @module @opafex/knowledge-grid/adapters-memory
  */
 
-import type { StorageAdapter, GridEntryRow, VectorAdapter, VectorMatch, VectorSearchResult } from './adapters';
+import type { StorageAdapter, GridEntryRow, VectorAdapter, VectorMatch, VectorSearchResult } from './adapters.js';
 
 // ============================================================================
 // In-Memory Storage Adapter
